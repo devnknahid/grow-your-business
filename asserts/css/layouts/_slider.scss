@@ -1,0 +1,30 @@
+.slider_area {
+    .slider {
+        .single_slider {
+            padding: 20px 0;
+            text-align: center;
+
+            h3 {
+                color: white;
+                font-size: 40px;
+                font-weight: 500;
+                padding: 15px 0px;
+            }
+
+            p {
+                font-size: 13px;
+                width: 85%;
+                margin: 0 auto;
+                color: white;
+                font-weight: normal;
+                padding: 15px 0;
+            }
+
+            .button {
+                input {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}

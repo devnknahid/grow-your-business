@@ -1,0 +1,50 @@
+.team_area {
+    h3 {
+        text-align: center;
+        font-size: 20px;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+    }
+
+    .team {
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 10px;
+
+        .single_mamber {
+            img {}
+
+            h3 {
+                text-align: left;
+                padding-top: 10px;
+
+                span {
+                    display: block;
+                    font-size: 13px;
+                    font-weight: normal;
+                }
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            .mamber_social_icon {
+                padding-top: 15px;
+
+                a {
+                    i {
+                        margin-left: 12px;
+                        color: #c8adad;
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

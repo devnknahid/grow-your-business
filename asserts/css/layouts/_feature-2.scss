@@ -1,0 +1,41 @@
+.feature_area_2 {
+    .feature_img {
+    
+    }
+
+    .feature_box {
+        h3 {
+            text-transform: capitalize;
+            padding: 10px 0;
+
+            span {
+                display: block;
+                line-height: 30px;
+            }
+        }
+
+        p {
+            padding-bottom: 10px;
+            text-align: justify;
+
+            font-weight: normal;
+
+        }
+
+        #feature_submit {}
+    }
+
+    p {
+
+        font-weight: normal;
+        flex-basis: 18%;
+        text-align: center;
+
+        span {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+
+}

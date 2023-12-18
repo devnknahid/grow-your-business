@@ -1,0 +1,29 @@
+/* Padding square & margin square*/
+@for $i from 1 to 21 {
+    .p-#{$i*2} {
+        padding: $i*2px;
+    }
+
+    .m-#{$i*2} {
+        margin: $i*2px;
+    }
+}
+
+/* Padding top-bottom & Margin top-bottom*/
+@for $i from 1 through 100 {
+    .pt-#{$i*2} {
+        padding-top: $i*2px;
+    }
+
+    .mt-#{$i*2} {
+        margin-top: $i*2px;
+    }
+
+    .pb-#{$i*2} {
+        padding-bottom: $i*2px;
+    }
+
+    .mb-#{$i*2} {
+        margin-bottom: $i*2px;
+    }
+}

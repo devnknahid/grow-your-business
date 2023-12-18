@@ -1,0 +1,98 @@
+.header_area {
+    color: var(--light);
+
+    .header_top {
+        background-color: var(--primary);
+
+        .social_area {
+            a {
+                i {
+                    color: var(--light);
+                    padding: 0 10px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: var(--hover);
+                    }
+                }
+            }
+        }
+
+        .contact {
+            font-size: 13px;
+            font-family: lato;
+
+            a {
+                i {
+                    color: var(--light);
+                    padding: 0 10px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: var(--hover);
+                    }
+                }
+
+                span {
+                    color: var(--light);
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: var(--hover);
+                    }
+                }
+            }
+        }
+    }
+
+    /*header_bottom */
+    .header_bottom {
+        color: var(--primary);
+
+        .logo {
+            h3 {
+                font-size: 20px;
+            }
+        }
+
+        .menu_area {
+            .menu {
+                .ul {
+
+                    li {
+                        padding: 0 10px;
+
+                        a {
+                            font-size: 13px;
+                            text-transform: capitalize;
+                            color: var(--secondery);
+                            transition: 0.3s;
+
+                            &:hover {
+                                color: var(--hover);
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .search_bar {
+
+                a {
+                    margin-left: 30px;
+
+                    .i_src {
+                        color: var(--primary);
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: var(--hover);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

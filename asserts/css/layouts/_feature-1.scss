@@ -1,0 +1,26 @@
+.feature_area_1 {
+    .features {
+        gap: 20px;
+
+        .single_feature {
+            text-align: center;
+            padding: 0 10px;
+
+            i {
+                font-size: 30px;
+            }
+
+            h3 {
+                padding: 10px 0;
+
+            }
+
+            p {
+                padding: 10px 0;
+            }
+
+        }
+    }
+
+
+}
