@@ -1,8 +1,20 @@
 .header_area {
     color: var(--light);
+    // position: relative;
+    // height: 80vh;
 
     .header_top {
         background-color: var(--primary);
+        // height: 100%;
+
+        .activeHTop {
+            position: fixed;
+            z-index: 9999;
+            right: 0;
+            flex-direction: column;
+            height: 80vh;
+            width: 15%;
+        }
 
         .social_area {
             a {
@@ -48,6 +60,15 @@
     /*header_bottom */
     .header_bottom {
         color: var(--primary);
+
+        .activeHBot {
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            flex-direction: column;
+            height: 80vh;
+            width: 15%;
+        }
 
         .logo {
             h3 {

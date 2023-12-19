@@ -1,3 +1,19 @@
+if (window.innerWidth <= 992) {
+    const headerTop = document.querySelector('.header_area .header_top .container .row');
+    headerTop.classList.add('activeHTop');
+    const headerBottom = document.querySelector('.header_area .header_bottom .container .row');
+    headerBottom.classList.add('activeHBot');
+
+} else {
+    headerTop.classList.remove('activeHTop');
+    headerBottom.classList.remove('activeHBot');
+}
+
+
+
+
+
+
 $(document).ready(function () {
     $('.slider_slide').slick({
         dots: true,
