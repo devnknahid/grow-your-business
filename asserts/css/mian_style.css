@@ -1965,14 +1965,6 @@ button {
 .header_area .header_top {
   background-color: var(--primary);
 }
-.header_area .header_top .activeHTop {
-  position: fixed;
-  z-index: 9999;
-  right: 0;
-  flex-direction: column;
-  height: 80vh;
-  width: 15%;
-}
 .header_area .header_top .social_area a i {
   color: var(--light);
   padding: 0 10px;
@@ -2000,16 +1992,16 @@ button {
 .header_area .header_top .contact a span:hover {
   color: var(--hover);
 }
-.header_area .header_bottom {
-  color: var(--primary);
-}
-.header_area .header_bottom .activeHBot {
+.header_area .fixdHBtm {
   position: fixed;
   z-index: 9999;
   left: 0;
   flex-direction: column;
   height: 80vh;
   width: 15%;
+}
+.header_area .header_bottom {
+  color: var(--primary);
 }
 .header_area .header_bottom .logo h3 {
   font-size: 20px;
