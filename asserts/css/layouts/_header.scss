@@ -84,7 +84,7 @@
                         padding-left: 0;
                         padding-right: 0;
                         align-items: center;
-                        justify-content: space-between;
+                        justify-content: start;
                         flex-direction: column-reverse;
 
 
@@ -113,7 +113,7 @@
                                 .ul {
                                     height: 100%;
                                     @include tJA;
-                                    flex-direction: column;
+                                    flex-direction: column-reverse;
                                     justify-content: space-evenly;
 
                                     li {
@@ -142,6 +142,7 @@
                 cursor: pointer;
                 font-size: 16px
             }
+
 
             .logo {
                 h3 {

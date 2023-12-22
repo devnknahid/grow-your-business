@@ -39,7 +39,6 @@ $(document).ready(function () {
 
 
 const ul = getSingleClass('.menu .ul');
-const mode = getSingleId('mode');
 const mainArea = getSingleClass('.main_area');
 // const ulLi = getSingleClass('ul li');
 const goTop = getSingleId('goTop');
@@ -91,7 +90,7 @@ if (window.innerWidth <= 768) {
 
 }
 
-if (window.innerWidth >= 992) {
+if (window.innerWidth >= 0) {
 
     // Create a new element
     var createLi = document.createElement('li');
@@ -124,15 +123,3 @@ if (window.innerWidth >= 992) {
 
     });
 }
-
-mode.addEventListener('click', () => {
-    const sun = getSingleClass('sun');
-    if (mode.classList.toggle('moon')) {
-        sun.setAttribute('class', 'fas fa-moon');
-        mainArea.classList.add('dark');
-    } else {
-        sun.setAttribute('class', 'fas fa-sun');
-        mainArea.classList.remove('dark');
-    }
-
-});

@@ -2029,7 +2029,7 @@ button {
   padding-left: 0;
   padding-right: 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   flex-direction: column-reverse;
 }
 .main_area .header_area .fixdHBtm .fixdHBtmContainer .fixdHBtmContainerRow .fixdHBtmContainerRowCol1 .logo {
@@ -2057,7 +2057,7 @@ button {
   text-align: center;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-evenly;
 }
 .main_area .header_area .fixdHBtm .fixdHBtmContainer .fixdHBtmContainerRow .fixdHBtmContainerRowCol2 .menu_area .menu .ul li a {
