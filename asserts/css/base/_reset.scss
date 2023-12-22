@@ -17,6 +17,11 @@ body {
     transition: all 0.3s;
 }
 
+.dark {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
 :root {
     --light: #ffffff;
     --dark: #323232;
@@ -30,6 +35,7 @@ body {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 img {
@@ -49,9 +55,13 @@ ul {
     -webkit-list-style: none;
 }
 
-.row {
-    justify-content: center;
-    align-items: center;
+@media (min-width:1200) {
+
+
+    .row {
+        justify-content: space-between;
+        align-items: start;
+    }
 }
 
 .d-grid {

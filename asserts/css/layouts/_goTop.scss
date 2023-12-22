@@ -1,0 +1,14 @@
+.main_area {
+
+   #goTop {
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.4s;
+      z-index: 999;
+   }
+
+   .activeTop {
+      visibility: visible !important;
+      opacity: 1 !important;
+   }
+}

@@ -1,27 +1,30 @@
-.slider_area {
-    .slider {
-        .single_slider {
-            padding: 20px 0;
-            text-align: center;
+.main_area {
+    .slider_area {
+        .slider {
+            .single_slider {
+                padding: 20px 0;
+                text-align: center;
 
-            h3 {
-                color: white;
-                font-weight: 500;
-                padding: 15px 0px;
-            }
+                h3 {
+                    color: white;
+                    font-weight: 500;
+                    padding: 15px 0px;
+                }
 
-            p {
-                margin: 0 auto;
-                color: white;
-                font-weight: normal;
-                padding: 15px 0;
-            }
+                p {
+                    margin: 0 auto;
+                    color: white;
+                    font-weight: normal;
+                    padding: 15px 0;
+                }
 
-            .button {
-                input {
-                    margin: 10px;
+                .button {
+                    input {
+                        margin: 10px;
+                    }
                 }
             }
         }
     }
+
 }

@@ -1,45 +1,49 @@
-.testimonial_area {
+.main_area {
+
+    .testimonial_area {
 
 
-    .testimonial {
-        background-image: url(../../../asserts/img/fotter_news.jpg);
+        .testimonial {
+            background-image: url(../../../asserts/img/fotter_news.jpg);
 
-        .testimonial_slider {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .sinfle_testimonial {
-            h3 {
-                text-transform: capitalize;
-                color: white;
-                font-size: 30px;
-                padding: 10px 0;
-            }
-
-            p {
-                padding: 20px 0;
-                color: white;
-                margin: 0 auto;
-                font-weight: normal;
-            }
-
-            img {
+            .testimonial_slider {
+                text-align: center;
                 display: flex;
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                margin: 0 auto;
+                flex-direction: column;
+                justify-content: center;
             }
 
-            h4 {
-                padding: 15px 0;
-                color: white;
-                font-size: 14px;
+            .sinfle_testimonial {
+                h3 {
+                    text-transform: capitalize;
+                    color: white;
+                    font-size: 30px;
+                    padding: 10px 0;
+                }
+
+                p {
+                    padding: 20px 0;
+                    color: white;
+                    margin: 0 auto;
+                    font-weight: normal;
+                }
+
+                img {
+                    display: flex;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                }
+
+                h4 {
+                    padding: 15px 0;
+                    color: white;
+                    font-size: 14px;
+                }
             }
         }
+
     }
 
 }

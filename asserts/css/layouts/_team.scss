@@ -1,50 +1,53 @@
-.team_area {
-    h3 {
-        text-align: center;
-        font-size: 20px;
-        text-transform: capitalize;
-        padding-bottom: 10px;
-    }
+.main_area {
+    .team_area {
+        h3 {
+            text-align: center;
+            font-size: 20px;
+            text-transform: capitalize;
+            padding-bottom: 10px;
+        }
 
-    .team {
-        grid-template-columns: repeat(1, auto);
-        grid-gap: 10px;
+        .team {
+            grid-template-columns: repeat(1, auto);
+            grid-gap: 10px;
 
-        .single_mamber {
-            img {}
+            .single_mamber {
+                img {}
 
-            h3 {
-                text-align: left;
-                padding-top: 10px;
+                h3 {
+                    text-align: left;
+                    padding-top: 10px;
 
-                span {
-                    display: block;
-                    font-size: 13px;
-                    font-weight: normal;
+                    span {
+                        display: block;
+                        font-size: 13px;
+                        font-weight: normal;
+                    }
                 }
-            }
 
-            p {
-                font-size: 13px;
-            }
+                p {
+                    font-size: 13px;
+                }
 
-            .mamber_social_icon {
-                padding-top: 15px;
+                .mamber_social_icon {
+                    padding-top: 15px;
 
-                a {
-                    i {
-                        margin-left: 12px;
-                        color: #c8adad;
-                        transition: 0.3s;
+                    a {
+                        i {
+                            margin-left: 12px;
+                            color: #c8adad;
+                            transition: 0.3s;
 
-                        &:hover {
-                            color: black;
+                            &:hover {
+                                color: black;
+                            }
                         }
                     }
                 }
             }
         }
-    }
 
+
+    }
 
 }

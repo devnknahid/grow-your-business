@@ -2,674 +2,261 @@
 @media (min-width: 576px) {}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+   .main_area {
+      @mixin txtAlignLeft {
+         text-align: left !important;
+      }
+
+      // slider_area
+      .slider_area {
+         .slider {
+            .single_slider {
+               @include txtAlignLeft;
+               display: flex !important;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+
+            }
+         }
+      }
+
+
+      // feature_area_1
+      .feature_area_1 {
+         .features {
+            flex-direction: row !important;
+         }
+
+      }
+
+      // feature_area_2
+      .feature_area_2 {
+         .feature_box {
+            @include txtAlignLeft;
+         }
+
+
+      }
+
+      //about_area
+      .about_area {
+
+         .about_us {
+            @include txtAlignLeft;
+
+         }
+
+         .FAQ {
+            @include txtAlignLeft;
+         }
+
+
+      }
+
+      // project_area
+      .project_area {
+
+         .project {
+            grid-template-columns: repeat(2, 1fr);
+         }
+
+      }
+
+      // team_area
+      .team_area {
+
+         .team {
+            grid-template-columns: repeat(2, 1fr);
+
+         }
+
+      }
+
+      // footer_area
+      .footer_area {
+         .footer_top {
+            .footer_top_box {
+               flex-direction: row !important;
+               justify-content: space-between !important;
+               align-items: start !important;
+
+               .contact_us {
+                  flex-direction: column;
+                  align-items: start !important;
+                  flex: 300px 0 0;
+               }
+            }
+
+            .links {
+               flex: 200px 0 0;
+            }
+
+            .latest_news {
+               flex: 32% 0 0;
+
+            }
+
+            .subscribe {
+               flex: 1 0 0;
+            }
+
+         }
+
+      }
+   }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+   .main_area {
+      .header_area {
+         .header_bottom {
+            #mode {
+               display: none;
+            }
+
+            .menu_area {
+               flex-direction: row !important;
+               justify-content: space-between !important;
+
+
+               .menu {
+                  flex: 1 0 0;
+
+                  .ul {
+                     justify-content: space-between !important;
+
+                     #mode {
+                        display: inline-block;
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      // footer_area
+      .footer_area {
+         .footer_top {
+
+            .footer_top_box {
+               gap: 10px;
+
+               .links {
+                  flex: 200px 0 0;
+               }
+
+               .latest_news {
+                  flex: 32% 0 0;
+
+               }
+
+               .subscribe {
+                  flex: 1 0 0;
+               }
+            }
+
+
+         }
+
+      }
+   }
+}
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+   .main_area {
+      @mixin txtAlignLeft {
+         text-align: left !important;
+      }
+
+      // slider_area
+      .slider_area {
+         .slider {
+            .single_slider {
+               @include txtAlignLeft;
+
+            }
+         }
+      }
+
+
+      // feature_area_1
+      .feature_area_1 {
+         .features {
+            flex-direction: row !important;
+         }
+
+      }
+
+      // feature_area_2
+      .feature_area_2 {
+         .feature_box {
+            @include txtAlignLeft;
+         }
+
+
+      }
+
+      //about_area
+      .about_area {
+
+         .about_us {
+            @include txtAlignLeft;
+
+         }
+
+         .FAQ {
+            @include txtAlignLeft;
+         }
+
+
+      }
+
+      // project_area
+      .project_area {
+
+         .project {
+            grid-template-columns: repeat(3, 1fr);
+         }
+
+      }
+
+      // team_area
+      .team_area {
+
+         .team {
+            grid-template-columns: repeat(3, 1fr);
+
+         }
+
+      }
+
+      // footer_area
+      .footer_area {
+         .footer_top {
+
+
+            .links {
+               flex: 200px 0 0;
+            }
+
+            .latest_news {
+               flex: 32% 0 0;
+
+            }
+
+            .subscribe {
+               flex: 1 0 0;
+            }
+
+         }
+
+      }
+   }
+}
 
 // XX-Large devices (larger desktops, 1400px and up)
-// @media (min-width: 1400px) {
-//    .header_area {
-
-//       .header_top {
-
-//          .social_area {
-//             a {}
-//          }
-
-//          .contact {
-          
-//             a {
-              
-               
-//             }
-//          }
-//       }
-
-//       /*header_bottom */
-//       .header_bottom {
-
-//          .logo {
-          
-//          }
-
-//          .menu_area {
-//             .menu {
-//                .ul {
-
-//                   li {
-                    
-
-                     
-//                   }
-//                }
-
-//             }
-
-//             .search_bar {
-
-//                a {
-//                   margin-left: 30px;
-
-//                   .i_src {
-//                      color: #0000ff;
-//                      transition: 0.3s;
-
-//                      &:hover {
-//                         color: tomato;
-//                      }
-//                   }
-//                }
-
-//             }
-//          }
-//       }
-//    }
-
-//    // slider_area
-//    .slider_area {
-//       .slider {
-//          .single_slider {
-//             padding: 20px 0;
-//             text-align: center;
-
-//             h3 {
-//                color: white;
-//                font-size: 40px;
-//                font-weight: 500;
-//                padding: 15px 0px;
-//             }
-
-//             p {
-//                font-size: 13px;
-//                width: 85%;
-//                margin: 0 auto;
-//                color: white;
-//                font-weight: normal;
-//                padding: 15px 0;
-//             }
-
-//             .button {
-//                input {
-//                   margin: 10px;
-//                }
-//             }
-//          }
-//       }
-//    }
-
-//    // history_area
-//    .history_area {
-//       h3 {
-//          position: relative;
-//          text-transform: capitalize;
-//          width: 160%;
-//          font-size: 36px;
-//          font-family: "poppins";
-//          font-weight: normal;
-//          line-height: 40pt;
-//          margin-right: 20px;
-
-//          &::after {
-//             position: absolute;
-//             content: "";
-//             width: 2px;
-//             height: 100%;
-//             background-color: #1455a7;
-//             top: 0;
-//             right: 0;
-
-//          }
-//       }
-
-//       p {
-//          font-size: 12px;
-//          width: 265%;
-//       }
-//    }
-
-//    // feature_area_1
-//    .feature_area_1 {
-//       .single_feature {
-//          text-align: center;
-//          padding: 0 10px;
-
-//          i {
-//             font-size: 30px;
-//          }
-
-//          h3 {
-//             font-size: 21pt;
-//             padding: 10px 0;
-
-//          }
-
-//          p {
-//             font-size: 12px;
-//             padding: 10px 0;
-//          }
-
-//       }
-//    }
-
-//    // feature_area_2
-//    .feature_area_2 {
-//       .feature_img {
-//          text-align: center;
-
-//          img {
-//             width: 40%;
-//          }
-//       }
-
-//       .feature_box {
-//          h3 {
-//             font-size: 20px;
-//             text-transform: capitalize;
-//             padding: 10px 0;
-
-//             span {
-//                display: block;
-//                line-height: 30px;
-//             }
-//          }
-
-//          p {
-//             font-size: 13px;
-//             padding-bottom: 10px;
-//             text-align: justify;
-
-//             font-weight: normal;
-
-//          }
-
-//          #feature_submit {}
-//       }
-
-//       p {
-
-//          font-size: 13px;
-//          font-weight: normal;
-//          flex-basis: 18%;
-//          text-align: center;
-
-//          span {
-//             display: block;
-//             font-size: 20px;
-//             font-weight: 700;
-//          }
-//       }
-
-//    }
-
-//    //about_area
-//    .about_area {
-//       h3 {
-//          padding: 10px 0;
-//          font-size: 20px;
-//       }
-
-//       .about_us {
-//          h3 {}
-
-//          p {
-//             padding: 10px 0;
-//          }
-
-//          p {
-//             font-size: 13px;
-//          }
-
-//          .admin {
-//             margin-top: 10px;
-//             display: flex;
-//             align-items: center;
-//             justify-content: space-evenly;
-
-//             .single_admin {
-//                align-items: center;
-
-//                img {
-//                   margin-right: 40px;
-//                }
-
-//                h3 {
-
-//                   span {
-//                      display: block;
-//                      font-size: 13px;
-//                   }
-//                }
-
-//             }
-
-//             h3 {}
-
-//          }
-
-//       }
-
-//       .FAQ {
-//          .faq {
-//             border-bottom: 2px solid #ddd;
-//          }
-
-//          p {
-//             padding: 10px 0;
-
-
-//             i {
-//                background-color: #ddd;
-//                width: 30px;
-//                cursor: pointer;
-//                height: 30px;
-//                border-radius: 50%;
-//                display: inline-flex;
-//                justify-content: center;
-//                align-items: center;
-//                color: black;
-//                margin-right: 10px;
-
-//                &:hover {
-//                   background-color: green;
-//                }
-//             }
-//          }
-
-//          .p2 {
-//             padding: 10px 0;
-//             color: blue;
-
-//             i {
-//                background-color: rgb(17, 60, 249);
-//                width: 30px;
-//                height: 30px;
-//                border-radius: 50%;
-//                display: inline-flex;
-//                justify-content: center;
-//                align-items: center;
-//                color: white;
-//                margin-right: 10px;
-//             }
-
-//             .p3 {
-//                display: block;
-//                margin-left: 45px;
-//                font-size: 13px;
-//             }
-
-//          }
-
-
-
-//          span {
-//             i {
-//                background-color: #ddd;
-//                width: 30px;
-//                height: 30px;
-//                border-radius: 50%;
-//                display: inline-flex;
-//                justify-content: center;
-//                align-items: center;
-//                margin-right: 10px;
-//                color: black;
-//                transition: 0.3s;
-//                cursor: pointer;
-
-//                &:hover {
-//                   background-color: blue;
-//                   color: white;
-//                }
-//             }
-
-//             p {
-//                display: block;
-//             }
-//          }
-//       }
-
-
-//    }
-
-//    // cta_area
-//    .cta_area {
-//       background-image: url(../../../asserts/img/cta.jpg);
-//       background-position: center;
-//       background-size: cover;
-//       height: 300px;
-
-//       .cta {
-//          padding: 50px 0;
-//          text-align: center;
-//          color: white;
-
-//          h3 {
-//             text-transform: capitalize;
-//             font-size: 30px;
-//          }
-
-//          p {
-//             padding: 15px 0;
-//             font-size: 13px;
-//             width: 50%;
-//             margin: 0 auto;
-//          }
-
-//          #cta_submit {}
-//       }
-//    }
-
-//    // project_area
-//    .project_area {
-//       h3 {
-//          text-align: center;
-//          font-size: 20px;
-//          text-transform: capitalize;
-//          padding-bottom: 10px;
-//       }
-
-//       .project {
-//          grid-template-columns: repeat(3, auto);
-//          grid-gap: 10px;
-
-//          .single_project {
-//             text-align: center;
-//             padding: 5px;
-//             border: 1px solid #DDD;
-//             border-radius: 3px;
-//             overflow: hidden;
-//             background-color: #6b7284b8;
-
-//             img {
-//                width: 100%;
-//                transition: 0.8s;
-//                cursor: pointer;
-//                border-radius: 3px;
-
-//                &:hover {
-//                   transform: rotate(45deg);
-//                }
-//             }
-//          }
-//       }
-
-
-
-//    }
-
-//    // testimonial_area
-//    .testimonial_area {
-
-
-//       .testimonial {
-//          background-image: url(../../../asserts/img/fotter_news.jpg);
-
-//          .testimonial_slider {
-//             text-align: center;
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: center;
-//          }
-
-//          .sinfle_testimonial {
-//             h3 {
-//                text-transform: capitalize;
-//                color: white;
-//                font-size: 30px;
-//                padding: 10px 0;
-//             }
-
-//             p {
-//                padding: 20px 0;
-//                color: white;
-//                width: 50%;
-//                margin: 0 auto;
-//                font-weight: normal;
-//             }
-
-//             img {
-//                display: flex;
-//                width: 60px;
-//                height: 60px;
-//                border-radius: 50%;
-//                margin: 0 auto;
-//             }
-
-//             h4 {
-//                padding: 15px 0;
-//                color: white;
-//                font-size: 14px;
-//             }
-//          }
-//       }
-
-//    }
-
-//    // team_area
-//    .team_area {
-//       h3 {
-//          text-align: center;
-//          font-size: 20px;
-//          text-transform: capitalize;
-//          padding-bottom: 10px;
-//       }
-
-//       .team {
-//          grid-template-columns: repeat(4, auto);
-//          grid-gap: 10px;
-
-//          .single_mamber {
-//             img {}
-
-//             h3 {
-//                text-align: left;
-//                padding-top: 10px;
-
-//                span {
-//                   display: block;
-//                   font-size: 13px;
-//                   font-weight: normal;
-//                }
-//             }
-
-//             p {
-//                font-size: 13px;
-//             }
-
-//             .mamber_social_icon {
-//                padding-top: 15px;
-
-//                a {
-//                   i {
-//                      margin-left: 12px;
-//                      color: #c8adad;
-//                      transition: 0.3s;
-
-//                      &:hover {
-//                         color: black;
-//                      }
-//                   }
-//                }
-//             }
-//          }
-//       }
-
-
-//    }
-
-//    // partner_logo
-//    .partner_logo {
-//       background-color: #f8f8f8;
-
-//       .single_logo {
-//          img {
-//             width: 50%;
-//          }
-//       }
-//    }
-
-//    // footer_area
-//    .footer_area {
-//       .footer_top {
-//          background-color: #02295a;
-//          color: white;
-
-//          h3 {
-//             font-size: 16px;
-//             padding-bottom: 10px;
-//          }
-
-//          p {
-//             color: #b4a9a9;
-//             font-size: 13px;
-//          }
-
-//          a {
-//             color: #b4a9a9;
-//          }
-
-//          .footer_top_box {
-//             justify-content: space-around;
-//          }
-
-//          .contact_us {
-//             flex-direction: column;
-//             flex-basis: 30%;
-//             margin-right: 40px;
-
-//             h3 {}
-
-//             p {
-//                color: #b4a9a9;
-//             }
-
-//             a {
-//                color: #b4a9a9;
-//                padding-top: 10px;
-
-//                span {
-//                   color: #b4a9a9;
-//                   text-transform: lowercase;
-//                }
-//             }
-
-//             .socail_icon {
-
-//                a {
-//                   margin-right: 10px;
-
-//                   i {
-//                      color: #28e8d4;
-//                      transition: 0.3s;
-
-//                      &:hover {
-//                         color: tomato;
-//                      }
-//                   }
-//                }
-//             }
-
-//          }
-
-//          .links {
-//             display: flex;
-//             flex-direction: column;
-//             flex-basis: 20%;
-
-//             .menu {
-//                ul {
-//                   li {
-//                      a {
-//                         transition: 0.3s;
-
-//                         &:hover {
-//                            color: tomato;
-//                         }
-//                      }
-//                   }
-//                }
-//             }
-//          }
-
-//          .latest_news {
-//             margin-right: 35px;
-
-//             .news_box {
-//                display: flex;
-//                flex-direction: column;
-//             }
-
-//             .single_box {
-//                display: flex;
-//                margin-bottom: 15px;
-
-//                img {
-//                   width: 50px;
-//                   margin-right: 10px;
-//                }
-
-//                p {}
-//             }
-//          }
-
-//          .subscribe {
-//             .scribe_box {
-//                display: flex;
-//                flex-direction: column;
-
-//                p {}
-
-//                a {
-//                   padding-top: 10px;
-
-//                   input {
-//                      width: 200px;
-//                      background-color: #004ba9;
-
-//                      &:hover {
-//                         background-color: #01377a;
-//                         color: #05ebb4;
-//                         border-radius: 0;
-//                      }
-//                   }
-//                }
-
-//             }
-//          }
-
-
-//       }
-
-//       .footer_bottom {
-//          background-color: #001b3d;
-//          color: white;
-//          font-size: 13px;
-
-//          .cpy {
-//             p {}
-//          }
-
-//          .menu {
-//             .ul {
-//                li {
-//                   padding-left: 15px;
-
-//                   a {
-//                      font-size: 13px;
-//                      color: white;
-//                      transition: 0.3s;
-
-//                      &:hover {
-//                         color: tomato;
-//                      }
-//                   }
-//                }
-//             }
-//          }
-
-//       }
-//    }
-// }
+@media (min-width: 1400px) {}
