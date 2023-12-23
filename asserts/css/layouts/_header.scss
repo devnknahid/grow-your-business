@@ -3,7 +3,20 @@
         color: var(--light);
 
         .header_top {
-            background-color: var(--primary);
+
+
+            .row {
+                .header_scl {
+                    padding: 5px;
+                    background-color: var(--primary);
+                }
+
+                .header_cnt {
+                    padding: 3px 5px;
+                    background-color: #86b7fe;
+                }
+
+            }
 
             .social_area {
                 display: flex;
@@ -27,6 +40,11 @@
             .contact {
 
                 a {
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
                     i {
                         color: var(--light);
                         padding: 0 10px;
@@ -40,6 +58,8 @@
                     span {
                         color: var(--light);
                         transition: 0.3s;
+                        display: inline-block;
+                        font-size: 12px;
 
                         &:hover {
                             color: var(--hover);
@@ -138,6 +158,11 @@
         .header_bottom {
             color: var(--primary);
 
+            .header_btm_lgo {
+                justify-content: start;
+            }
+
+
             span {
                 cursor: pointer;
                 font-size: 16px
@@ -147,6 +172,7 @@
             .logo {
                 h3 {
                     font-size: 20px;
+                    text-transform: capitalize;
                 }
             }
 

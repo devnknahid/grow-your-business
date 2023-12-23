@@ -59,12 +59,9 @@ goTop.style.right = '5px';
 window.addEventListener('scroll', () => {
     if (window.scrollY > 400) {
         goTop.classList.add('activeTop');
-        console.log('go vai go');
     } else {
         goTop.classList.remove('activeTop');
     }
-
-
 })
 
 
