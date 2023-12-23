@@ -2116,7 +2116,6 @@ button {
   text-transform: capitalize;
 }
 .main_area .header_area .header_bottom .menu_area .menu .ul .current {
-  background-color: #495057;
   padding: 2px 5px;
 }
 .main_area .header_area .header_bottom .menu_area .menu .ul .current a {
@@ -2638,7 +2637,7 @@ button {
     position: fixed;
     width: 100%;
     z-index: 999;
-    background-color: rgba(13, 110, 253, 0.45);
+    background-color: #121212;
     color: var(--light) !important;
     top: 0;
   }
@@ -2650,6 +2649,9 @@ button {
   }
   .main_area .header_area .fixd .menu_area .menu .ul {
     justify-content: space-between !important;
+  }
+  .main_area .header_area .fixd .menu_area .menu .ul .current {
+    background-color: #495057;
   }
   .main_area .header_area .fixd .menu_area .menu .ul li a {
     color: var(--light) !important;
