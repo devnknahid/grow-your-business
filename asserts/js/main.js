@@ -3,6 +3,7 @@ $(document).ready(function () {
         dealy: 10,
         time: 1000
     });
+    $('.ul').onePageNav();
     $('.slider_slide').slick({
         dots: true,
         infinite: true,
@@ -59,6 +60,13 @@ window.addEventListener('scroll', () => {
         goTop.classList.add('activeTop');
     } else {
         goTop.classList.remove('activeTop');
+    }
+    const headerBtm = getSingleClass('.header_bottom');
+    if (window.scrollY >= 100) {
+        headerBtm.classList.add('fixd');
+    } else {
+        headerBtm.classList.remove('fixd');
+
     }
 })
 

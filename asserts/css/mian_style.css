@@ -1811,6 +1811,8 @@ body {
 }
 .dark #goTop {
   background-color: var(--light) !important;
+}
+.dark #goTop a {
   color: var(--black) !important;
 }
 
@@ -2112,6 +2114,13 @@ button {
 .main_area .header_area .header_bottom .logo h3 {
   font-size: 20px;
   text-transform: capitalize;
+}
+.main_area .header_area .header_bottom .menu_area .menu .ul .current {
+  background-color: #495057;
+  padding: 2px 5px;
+}
+.main_area .header_area .header_bottom .menu_area .menu .ul .current a {
+  color: var(--light) !important;
 }
 .main_area .header_area .header_bottom .menu_area .menu .ul li a {
   font-size: 13px;
@@ -2624,16 +2633,28 @@ button {
   }
 }
 @media (min-width: 992px) {
-  .main_area .header_area .header_bottom #mode {
+  .main_area .header_area .fixd {
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(13, 110, 253, 0.45);
+    color: var(--light) !important;
+    top: 0;
+  }
+  .main_area .header_area .fixd #mode {
     display: none;
   }
-  .main_area .header_area .header_bottom .menu_area {
+  .main_area .header_area .fixd .menu_area {
     flex-direction: row !important;
   }
-  .main_area .header_area .header_bottom .menu_area .menu .ul {
+  .main_area .header_area .fixd .menu_area .menu .ul {
     justify-content: space-between !important;
   }
-  .main_area .header_area .header_bottom .menu_area .menu .ul #mode {
+  .main_area .header_area .fixd .menu_area .menu .ul li a {
+    color: var(--light) !important;
+  }
+  .main_area .header_area .fixd .menu_area .menu .ul #mode {
     display: inline-block;
   }
   .main_area .footer_area .footer_top .footer_top_box {

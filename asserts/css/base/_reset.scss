@@ -58,8 +58,11 @@ body {
 
     #goTop {
         background-color: var(--light) !important;
-        color: var(--black) !important;
 
+        a {
+            color: var(--black) !important;
+
+        }
     }
 }
 

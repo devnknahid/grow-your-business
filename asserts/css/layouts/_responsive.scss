@@ -153,7 +153,15 @@
 @media (min-width: 992px) {
    .main_area {
       .header_area {
-         .header_bottom {
+         .fixd {
+            transition: 0.4s;
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+            background-color: rgb(13 110 253 / 45%);
+            color: var(--light) !important;
+            top: 0;
+
             #mode {
                display: none;
             }
@@ -166,6 +174,12 @@
 
                   .ul {
                      justify-content: space-between !important;
+
+                     li {
+                        a {
+                           color: var(--light) !important;
+                        }
+                     }
 
                      #mode {
                         display: inline-block;
