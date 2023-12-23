@@ -2637,7 +2637,7 @@ button {
     position: fixed;
     width: 100%;
     z-index: 9999;
-    background-color: #121212;
+    background-color: #121213;
     color: var(--light) !important;
     top: 0;
   }
@@ -2651,7 +2651,7 @@ button {
     justify-content: space-between !important;
   }
   .main_area .header_area .fixd .menu_area .menu .ul .current {
-    background-color: #495057;
+    background-color: #495056;
   }
   .main_area .header_area .fixd .menu_area .menu .ul li a {
     color: var(--light) !important;
