@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    $('.counter').counterUp({
+        dealy: 10,
+        time: 1000
+    });
     $('.slider_slide').slick({
         dots: true,
         infinite: true,
@@ -19,13 +23,6 @@ $(document).ready(function () {
         adaptiveHeight: true
     });
 
-    $('.counter').counterUp();
-
-
-
-});
-$(document).ready(function () {
-
     $('.tg1').click(function () {
         $('.tgHide').fadeToggle(1000);
     });
@@ -35,7 +32,8 @@ $(document).ready(function () {
     });
 
 
-})
+});
+
 
 
 const ul = getSingleClass('.menu .ul');
