@@ -135,6 +135,12 @@
 
             .subscribe {
                flex: 1 0 0;
+
+               .scribe_box {
+                  a {
+                     width: 100%;
+                  }
+               }
             }
 
          }

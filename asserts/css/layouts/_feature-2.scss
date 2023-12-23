@@ -21,7 +21,18 @@
 
             }
 
-            #feature_submit {}
+            #feature_submit {
+                border-radius: 0;
+                text-transform: capitalize;
+                color: var(--primary);
+                border-color: var(--primary);
+
+                &:hover {
+                    background-color: var(--primary);
+                    color: var(--light);
+
+                }
+            }
         }
 
         p {

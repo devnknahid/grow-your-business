@@ -25,10 +25,11 @@ body {
 :root {
     --light: #ffffff;
     --dark: #323232;
-    --primary: #198754;
-    --secondery: #0f5132;
+    --primary: #1C6876;
+    --secondery: #DC4940;
+    --secondery2: #113B43;
     --black: #000000;
-    --hover: #646464;
+    --hover: #113B43;
 }
 
 .row>* {
@@ -125,7 +126,7 @@ ul {
     &::before {
         position: absolute;
         content: '';
-        background-color: var(--secondery);
+        background-color: var(--primary);
         width: 100%;
         height: 100%;
         opacity: 80%;
@@ -145,7 +146,7 @@ ul {
     &::before {
         position: absolute;
         content: '';
-        background-color: var(--black);
+        background-color: var(--primary);
         width: 100%;
         height: 100%;
         opacity: 80%;

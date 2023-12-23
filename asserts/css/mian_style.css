@@ -1790,10 +1790,11 @@ body {
 :root {
   --light: #ffffff;
   --dark: #323232;
-  --primary: #198754;
-  --secondery: #0f5132;
+  --primary: #1C6876;
+  --secondery: #DC4940;
+  --secondery2: #113B43;
   --black: #000000;
-  --hover: #646464;
+  --hover: #113B43;
 }
 
 .row > * {
@@ -1883,7 +1884,7 @@ ul {
 .bg_blue::before {
   position: absolute;
   content: "";
-  background-color: var(--secondery);
+  background-color: var(--primary);
   width: 100%;
   height: 100%;
   opacity: 80%;
@@ -1902,7 +1903,7 @@ ul {
 .bg_black::before {
   position: absolute;
   content: "";
-  background-color: var(--black);
+  background-color: var(--primary);
   width: 100%;
   height: 100%;
   opacity: 80%;
@@ -1980,7 +1981,7 @@ button {
 }
 .main_area .header_area .header_top .row .header_cnt {
   padding: 3px 5px;
-  background-color: #86b7fe;
+  background-color: var(--secondery);
 }
 .main_area .header_area .header_top .social_area {
   display: flex;
@@ -2000,22 +2001,20 @@ button {
   justify-content: center;
   align-items: center;
 }
+.main_area .header_area .header_top .contact a:hover span,
+.main_area .header_area .header_top .contact a:hover i {
+  color: var(--hover);
+}
 .main_area .header_area .header_top .contact a i {
   color: var(--light);
   padding: 0 10px;
   transition: 0.3s;
-}
-.main_area .header_area .header_top .contact a i:hover {
-  color: var(--hover);
 }
 .main_area .header_area .header_top .contact a span {
   color: var(--light);
   transition: 0.3s;
   display: inline-block;
   font-size: 12px;
-}
-.main_area .header_area .header_top .contact a span:hover {
-  color: var(--hover);
 }
 .main_area .header_area .fixdHBtm {
   flex-direction: column;
@@ -2100,11 +2099,11 @@ button {
 .main_area .header_area .header_bottom .menu_area .menu .ul li a {
   font-size: 13px;
   text-transform: capitalize;
-  color: var(--secondery);
+  color: var(--primary);
   transition: 0.3s;
 }
 .main_area .header_area .header_bottom .menu_area .menu .ul li a:hover {
-  color: var(--hover);
+  color: var(--dark);
 }
 .main_area .header_area .header_bottom .menu_area .search_bar a {
   margin-left: 30px;
@@ -2190,6 +2189,16 @@ button {
   padding-bottom: 10px;
   text-align: justify;
   font-weight: normal;
+}
+.main_area .feature_area_2 .feature_box #feature_submit {
+  border-radius: 0;
+  text-transform: capitalize;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+.main_area .feature_area_2 .feature_box #feature_submit:hover {
+  background-color: var(--primary);
+  color: var(--light);
 }
 .main_area .feature_area_2 p {
   font-weight: normal;
@@ -2401,11 +2410,11 @@ button {
 }
 .main_area .team_area .team .single_mamber .mamber_social_icon a i {
   margin-left: 12px;
-  color: #c8adad;
+  color: var(--secondery2);
   transition: 0.3s;
 }
 .main_area .team_area .team .single_mamber .mamber_social_icon a i:hover {
-  color: black;
+  color: var(--secondery);
 }
 
 /* partner_logo start*/
@@ -2446,7 +2455,7 @@ button {
   transition: 0.3s;
 }
 .main_area .footer_area .footer_top .contact_us .socail_icon a i:hover {
-  color: tomato;
+  color: var(--secondery);
 }
 .main_area .footer_area .footer_top .links {
   display: flex;
@@ -2457,7 +2466,7 @@ button {
   transition: 0.3s;
 }
 .main_area .footer_area .footer_top .links .menu ul li a:hover {
-  color: tomato;
+  color: var(--secondery);
 }
 .main_area .footer_area .footer_top .latest_news .news_box {
   display: flex;
@@ -2480,19 +2489,21 @@ button {
   padding-top: 10px;
   width: 160px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .main_area .footer_area .footer_top .subscribe .scribe_box a input {
+  text-transform: capitalize;
   width: 100%;
-  background-color: var(--bs-blue);
   color: white;
-}
-.main_area .footer_area .footer_top .subscribe .scribe_box a input:hover {
-  background-color: #01377a;
-  color: #05ebb4;
+  border: 0;
   border-radius: 0;
 }
+.main_area .footer_area .footer_top .subscribe .scribe_box a input:hover {
+  color: var(--primary);
+}
 .main_area .footer_area .footer_bottom {
-  background-color: #001b3d;
+  background-color: var(--secondery2);
   color: white;
   font-size: 13px;
 }
@@ -2505,7 +2516,7 @@ button {
   transition: 0.3s;
 }
 .main_area .footer_area .footer_bottom .menu .ul li a:hover {
-  color: tomato;
+  color: var(--secondery);
 }
 
 /* goTop start*/
@@ -2590,6 +2601,9 @@ button {
   }
   .main_area .footer_area .footer_top .subscribe {
     flex: 1 0 0;
+  }
+  .main_area .footer_area .footer_top .subscribe .scribe_box a {
+    width: 100%;
   }
 }
 @media (min-width: 992px) {

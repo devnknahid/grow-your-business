@@ -120,9 +120,9 @@
 
 .slick-slider li button {
     padding: 10px;
-    border-radius: 49%;
+    border-radius: 50%;
     height: 30px;
-    width: 28px;
+    width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +135,7 @@
 }
 
 .slick-slider li button:hover {
-    background-color: #0808ac;
+    background-color: #1C6876;
     color: white;
 }
 

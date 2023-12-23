@@ -35,11 +35,11 @@
                     a {
                         i {
                             margin-left: 12px;
-                            color: #c8adad;
+                            color: var(--secondery2);
                             transition: 0.3s;
 
                             &:hover {
-                                color: black;
+                                color: var(--secondery);
                             }
                         }
                     }

@@ -35,7 +35,7 @@
                             transition: 0.3s;
 
                             &:hover {
-                                color: tomato;
+                                color: var(--secondery);
                             }
                         }
                     }
@@ -55,7 +55,7 @@
                                 transition: 0.3s;
 
                                 &:hover {
-                                    color: tomato;
+                                    color: var(--secondery);
                                 }
                             }
                         }
@@ -95,16 +95,18 @@
                         padding-top: 10px;
                         width: 160px;
                         overflow: hidden;
-
+                        display: flex;
+                        justify-content: center;
+                        
                         input {
+                            text-transform: capitalize;
                             width: 100%;
-                            background-color: var(--bs-blue);
                             color: white;
+                            border: 0;
+                            border-radius: 0;
 
                             &:hover {
-                                background-color: #01377a;
-                                color: #05ebb4;
-                                border-radius: 0;
+                                color: var(--primary);
                             }
                         }
                     }
@@ -116,7 +118,7 @@
         }
 
         .footer_bottom {
-            background-color: #001b3d;
+            background-color: var(--secondery2);
             color: white;
             font-size: 13px;
 
@@ -135,7 +137,7 @@
                             transition: 0.3s;
 
                             &:hover {
-                                color: tomato;
+                                color: var(--secondery);
                             }
                         }
                     }

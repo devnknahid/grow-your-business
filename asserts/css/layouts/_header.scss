@@ -13,7 +13,7 @@
 
                 .header_cnt {
                     padding: 3px 5px;
-                    background-color: #86b7fe;
+                    background-color: var(--secondery);
                 }
 
             }
@@ -40,19 +40,24 @@
             .contact {
 
                 a {
-
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
+                    &:hover {
+
+                        span,
+                        i {
+                            color: var(--hover);
+                        }
+                    }
 
                     i {
                         color: var(--light);
                         padding: 0 10px;
                         transition: 0.3s;
 
-                        &:hover {
-                            color: var(--hover);
-                        }
+
                     }
 
                     span {
@@ -61,9 +66,7 @@
                         display: inline-block;
                         font-size: 12px;
 
-                        &:hover {
-                            color: var(--hover);
-                        }
+
                     }
                 }
             }
@@ -185,11 +188,11 @@
                             a {
                                 font-size: 13px;
                                 text-transform: capitalize;
-                                color: var(--secondery);
+                                color: var(--primary);
                                 transition: 0.3s;
 
                                 &:hover {
-                                    color: var(--hover);
+                                    color: var(--dark);
                                 }
                             }
                         }
