@@ -1782,11 +1782,6 @@ body {
   transition: all 0.3s;
 }
 
-.dark {
-  background-color: var(--dark);
-  color: var(--light);
-}
-
 :root {
   --light: #ffffff;
   --dark: #323232;
@@ -1795,6 +1790,28 @@ body {
   --secondery2: #113B43;
   --black: #000000;
   --hover: #113B43;
+}
+
+.dark {
+  background-color: var(--dark);
+  color: var(--light);
+  --primary: #ffffff !important;
+}
+.dark .header_scl {
+  background-color: #1C6876 !important;
+}
+.dark .bg_blue::before {
+  background-color: #1C6876 !important;
+}
+.dark .bg_black::before {
+  background-color: #1C6876 !important;
+}
+.dark .footer_top {
+  background-color: #1C6876 !important;
+}
+.dark #goTop {
+  background-color: var(--light) !important;
+  color: var(--black) !important;
 }
 
 .row > * {
